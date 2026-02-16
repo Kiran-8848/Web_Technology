@@ -1,0 +1,205 @@
+/* ===== Google Font (Optional but Recommended) ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body Styling ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #8824a6, #1455b7);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+    background: #111;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s ease;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #ff6b35;
+    border-bottom: 2px solid #ff6b35;
+}
+
+/* ===== Header Section ===== */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('../images/restaurant-bg.jpg') center/cover no-repeat;
+    color: rgb(236, 233, 232);
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* ===== Main Section ===== */
+main {
+    padding: 50px 10%;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #222;
+}
+
+/* ===== Food Gallery ===== */
+.food-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.food-item {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.food-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.food-item img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.food-item h3 {
+    font-size: 20px;
+    color: #444;
+}
+
+/* ===== Contact Form ===== */
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ff6b35;
+    box-shadow: 0 0 5px rgba(255,107,53,0.3);
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+form input[type="reset"] {
+    background: #555;
+}
+
+form input[type="submit"]:hover {
+    background: #e85a2c;
+}
+
+form input[type="reset"]:hover {
+    background: #333;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Make page full height */
+html, body {
+    height: 100%;
+}
+
+/* Use flex layout for page */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Make main content grow */
+main, header {
+    flex: 1;
+}
+
+/* Footer stays at bottom */
+footer {
+    background: #b1c51d68;
+    color: rgb(177, 150, 160);
+    text-align: center;
+    padding: 20px;
+}
+
+.love-text::before {
+    content: "♥ ";
+    color: red;
+    font-size: 100px;
+}
+
